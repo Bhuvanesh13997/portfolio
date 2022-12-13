@@ -1,0 +1,995 @@
+/*********** Google Fonts - Nunito ***********/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+/************ CSS Reset Settings ************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: #000000 !important;
+    letter-spacing: 0.4px;
+    font-size: 16px !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #ffffff;
+    background-color: crimson;
+}
+.wrapper{
+    width: 100%;
+    
+}
+
+/************ Scroll Bar ************/
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bfbfbf;
+    border-radius: 10px;
+}
+
+
+/************ CSS Variables ************/
+
+:root{
+    --font-large-color:#ffffff;
+    --font-small-color:#9f9f9f;
+    --main-color:#FF2626;
+    --bg-color-1:#131416;
+    --bg-color-2:#191a20;
+}
+
+h1{
+    color: var(--font-large-color);
+}
+h2{
+    color: var(--font-large-color);
+}
+h3{
+    color: var(--font-large-color);
+}
+h4{
+    color: var(--font-large-color);
+}
+h5{
+    color: var(--font-large-color);
+}
+p,span{
+    
+    color: var(--font-small-color);
+    margin-bottom: 0 !important;
+}
+a{
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
+/************ Reuseable Classes ************/
+
+.button{
+    background-color: transparent;
+    font-size: 17px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    font-weight: 300;
+}
+
+.button:hover{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+
+/* Navbar */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(18, 18, 18, 0.7);
+    color: #000000;
+    padding: 0 20px;
+}
+header nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .nav_logo{
+    color: crimson !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav_list{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.nav_link i{
+    font-size: 20px;
+}
+.nav_link:hover{
+    /* color: crimson !important;  */
+}
+.active_link{
+    border-bottom: 2px solid crimson;
+    font-weight: 500;
+}
+.nav_close {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+}
+
+.nav_toggle{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+/*Scroll Header*/
+
+.scroll_header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* Home Section */
+
+.Hero_section{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden; /* to avoid stars overflow to other sections*/
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+}
+.Hero_section .text_holder{
+    width: 100%;
+    text-align: center;
+}
+.Hero_section .text_holder .name{
+    font-weight: 400;
+    font-size: 90px;
+}
+.Hero_section .text_holder .name span{
+    color: var(--main-color);
+    font-size: 90px;
+}
+.Hero_section .text_holder .designation{
+    font-weight: 300;
+}
+.Hero_section .text_holder .designation span{
+    color: var(--main-color);
+    font-size: 34px;
+}
+
+
+
+
+/*About Section*/
+
+.About_section{
+    background-color: #1C1C1C;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.About_section .img_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About_section .img_column .about_img{
+    width: 350px;
+    border: 10px solid #232323;
+    box-shadow: 0 25px 50px -12px rgb(0,0,0/25%);
+    background-color: #000000;
+}
+.About_section .img_column .about_img img{
+    
+}
+
+.About_section .text_column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.About_section .text_column h4{
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+.About_section .text_column h5 span{
+    color: crimson;
+}
+.About_section .text_column p{
+    margin: 20px 0;
+}
+
+.About_section .text_column .about_list{
+    margin: 30px 0;
+}
+
+.About_section .text_column .about_list .list_item{
+    display: inline-flex;
+    width: 22rem;
+    margin-bottom: 1rem;
+}
+.About_section .text_column .about_list .list_item label{
+    min-width: 100px;
+    border-right: 1px solid #c1c1c1;
+    font-size: 15px;
+    color: #ffffff;
+}
+.About_section .text_column .about_list .list_item p{
+    margin: 0;
+    padding-left: 1.5rem;
+    font-size: 15px !important;
+}
+
+
+
+
+
+
+
+/***************************Experience***********************/
+
+.Experience_section{
+    background-color: #121212;
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+.Experience_section .content_row > div{
+    display: flex;
+    justify-content: center;
+}
+.Experience_section .timeline_items{
+    
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.Experience_section .timeline_items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #2f363e;
+    left: calc(50% - 1px);
+}
+
+.Experience_section .timeline_items .timeline_item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.Experience_section .timeline_items .timeline_item:last-child{
+    margin-bottom: 0;
+}
+
+.Experience_section .timeline_items .timeline_item:nth-child(odd){
+    padding-right:calc(50% + 30px);
+    text-align: right;
+}
+.Experience_section .timeline_items .timeline_item:nth-child(even){
+    padding-left:calc(50% + 30px);
+    text-align: left;
+}
+
+.Experience_section .timeline_items .timeline_item .timeline_dot{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #eaa023;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 10px;
+}
+
+.Experience_section .timeline_items .timeline_item .timeline_date{
+    font-size: 16px;
+    color: #eaa023;
+    margin: 6px 0 15px;
+}
+.Experience_section .timeline_items .timeline_item .timeline_content{
+    background-color: #2f363e;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+
+
+
+/***************************** Skill Section ***********************/
+
+.Skill_section{
+    /* background-color: #121212; */
+    background-color: rgb(28, 28, 28);
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+.Skill_section .content_row > div{
+    display: flex;
+    justify-content: center;
+}
+.Skill_section .card{
+    background-color: transparent;
+    border: 0;
+}
+.Skill_section .card .card-header{
+    position: relative;
+    height: 150px;
+    border-bottom: 0;
+}
+.Skill_section .card .card-header img{
+    width: 120px;
+    height: 120px;
+    filter: invert(0.2);
+}
+.Skill_section .card .skill_level{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill_section .card .card-body ._title{
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.Skill_section .card .card-body ._description{
+    font-size: 14px !important;
+    color: #A3A3A3;
+}
+
+.Skill_section .content_row > div:nth-child(1) .skill_level{
+    background-color: #ff4f4f28;
+    color: #ff4f4f;
+    border-color: #ff4f4f;
+}
+.Skill_section .content_row > div:nth-child(2) .skill_level{
+    background-color: #4fa0ff28;
+    color: #4fa0ff;
+    border-color: #4fa0ff;
+}
+.Skill_section .content_row > div:nth-child(3) .skill_level{
+    background-color: #ffed4f28;
+    color: #ffed4f;
+    border-color: #ffed4f;
+}
+.Skill_section .content_row > div:nth-child(4) .skill_level{
+    background-color: #52ff4f28;
+    color: #52ff4f;
+    border-color: #52ff4f;
+}
+.Skill_section .content_row > div:nth-child(5) .skill_level{
+    background-color: #f4dfff28;
+    color: #4fdfff;
+    border-color: #4fdfff;
+}
+.Skill_section .content_row > div:nth-child(6) .skill_level{
+    background-color: #f4dfff28;
+    color: #ff4f4f;
+    border-color: #ff4f4f;
+}
+
+
+
+/******************* Projects ***********************/
+
+
+.Projects_section{
+    background-color: #121212;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.Projects_section .content_row > div{
+    display: flex;
+    justify-content: center;
+}
+.Projects_section .projects_filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+}
+.Projects_section .projects_filters .filter_title{
+    font-size: 14px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+}
+.Projects_section .projects_filters .active_filter{
+    background-color: crimson;
+}
+.Projects_section .project_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Projects_section .project_list .work_card{
+    width: 280px;
+    padding: 20px;
+    background-color: currentColor;
+    border-radius: 12px;
+    margin: 15px;
+    text-align: left;
+}
+.Projects_section .project_list .work_card.disabled{
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+}
+.Projects_section .project_list .work_card img{
+    max-width: 100%;
+    border-radius: 12px;
+    height: 180px;
+}
+.Projects_section .project_list .work_card h5{
+    margin-top: 10px;
+}
+.Projects_section .project_list .work_card p{
+    color: crimson;
+}
+.Projects_section .project_list .work_card a{
+    font-size: 14px;
+}
+.Projects_section .project_list .work_card a:hover{
+    color: crimson !important;
+    text-decoration: underline !important;
+}
+
+
+/*********************** LetsTalk_section ************************/
+
+
+.LetsTalk_section{
+    text-align: center;
+    color: #ffffff;
+    /* background-color: #121212; */
+    background-color: rgb(28, 28, 28);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0 100px 0;
+}
+.LetsTalk_section .heading{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.LetsTalk_section .description{
+    font-size: 20px !important;
+    margin-bottom: 40px;
+}
+.LetsTalk_section .content_row{
+    /* max-width: 800px;
+    margin: 0 auto; */
+}
+.LetsTalk_section .contact_details .contact_info{
+    width: 450px;
+    margin: 0 auto 10px auto;
+}
+.LetsTalk_section .contact_details .contact_info i{
+    font-size: 30px;
+}
+.LetsTalk_section .contact_details .contact_info > div{
+    border: 2px solid crimson;
+    border-radius: 8px;
+    padding: 15px;
+    text-align:center ;
+}
+/* .LetsTalk_section .contact_details .contact_info > div h5{
+    color: crimson;
+} */
+.LetsTalk_section .form_section{
+    text-align: left;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.LetsTalk_section .form_section input{
+    background-color: #242424;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.LetsTalk_section .form_section input:focus{
+    box-shadow: unset;
+}
+.LetsTalk_section .form_section textarea{
+    background-color: #242424;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.LetsTalk_section .form_section textarea:focus{
+    box-shadow: unset;
+}
+.LetsTalk_section .form_section label{
+    color: #898989;
+}
+.LetsTalk_section .form_section .submitBtn{
+    border-radius: 4px;
+    background-color: crimson;
+    color: #ffffff;
+    border: 0;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.LetsTalk_section .form_section .submitBtn:focus{
+    box-shadow: unset;
+}
+
+
+
+/************ Scroll To Top Button ************/
+
+.scrollUp{
+    position: fixed;
+    bottom: -20%;
+    right: 1rem;
+    padding: 8px 10px 4px 10px;
+    border-radius: 6px;
+    background-color: crimson;
+    color: #ffffff;
+    transition: 0.4s;
+}
+.scrollUp:hover{
+    opacity: 0.8;
+}
+.scrollUp i{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.show_scroll{
+    bottom: 5rem;
+}
+
+
+
+
+
+
+
+/*************************************************** Responsive ****************************************************/
+
+@media screen and (max-width:991px){
+
+    header{
+        background-color: rgba(18, 18, 18, 1);
+    }
+
+    .scroll_header {
+        box-shadow: 0px -1px 4px rgb(256 256 256 / 25%);
+    }
+
+    header nav .nav_logo{
+        font-weight: 500;
+    }
+    .nav_menu {
+        color: #ffffff;
+        background-color: rgba(18, 18, 18, 1);
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: -100%;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0px -1px 4px rgb(255 255 255 / 25%);
+        transition: 0.6s;
+        padding: 2rem 1.5rem 2rem;
+    }
+    .nav_link{
+        font-size: 14px;
+    }
+    .active_link{
+        color:crimson !important;
+        border-bottom: unset;
+        font-weight: 600;
+    }   
+    .show_menu{
+        bottom: 5px;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 991px) {
+    .nav_list{
+        grid-template-columns: repeat(6 , 1fr);
+    }
+}
+
+
+@media screen and (min-width : 991px) {
+    header{
+        top: 0;
+        bottom: initial;
+    }
+    header{
+        padding: 0 1rem;
+    }
+    nav{
+        height: 60px;
+        column-gap: 1rem;
+    }
+    .nav_close,.nav_toggle,.nav_icon{
+        display: none !important;
+    }
+    .nav_list{
+        display: flex;
+        column-gap: 2rem;
+    }
+    .nav_menu{
+        margin-left: auto;
+    }
+}
+
+
+
+
+/*Responsive screen [max width - 400px]*/
+
+@media screen and (max-width:400px){
+
+    /*Hero Section*/
+
+    .Hero_section .text_holder{
+        text-align: left !important;
+    }
+    .Hero_section .text_holder .name{
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Responsive screen [max width - 576px]*/
+
+@media screen and (max-width:576px){
+
+
+    /*Hero Section*/
+
+    .Hero_section .text_holder{
+        display: flex;
+        flex-direction: column;
+    }
+    .Hero_section .text_holder .name{
+        font-size: 40px !important;
+    }
+    .Hero_section .text_holder .name span{
+        font-size: 40px;
+    }
+    .Hero_section .text_holder .designation{
+        font-size: 20px !important;
+    }
+    .Hero_section .text_holder .designation span{
+        font-size: 20px;
+    }
+
+
+    /*Skill Section*/
+
+    .Skill_section .card .card-header {
+        height: 100px;
+        width: 120px;
+        margin: 0 auto;
+    }
+    .Skill_section .card .card-header img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Skill_section .card .skill_level{
+        top: 50px;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        border: 3px solid #ffffff;
+        font-size: 10px;
+    }
+
+    .Skill_section .card .card-body ._title {
+        font-size: 18px !important;
+    }
+    .Skill_section .card .card-body ._description {
+        display: none;
+    }
+
+    /*Experience Section*/
+
+    .Experience_section .timeline_content h5{
+        font-size: 16px;
+    }
+    .Experience_section .timeline_content p{
+        font-size: 12px;
+    }
+
+
+    /*LetsTalk Section*/
+
+    .LetsTalk_section{
+        padding-bottom: 150px !important;
+    }
+    .LetsTalk_section .description {
+        font-size: 14px !important;
+    }
+    .LetsTalk_section .contact_details .contact_info{
+        width: 100%;
+        padding: 0;
+    }
+
+    .LetsTalk_section .contact_details .contact_info i{
+        font-size: 30px;
+    }
+    .LetsTalk_section .contact_details .contact_info > div h5{
+        font-size: 16px !important;
+    }
+    .LetsTalk_section .contact_details .contact_info > div p{
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+}
+
+
+
+/*Responsive screen (min-width:576px) and (max-width:768px)*/
+
+@media screen and (min-width:576px) and (max-width:768px){
+
+    /*Hero Section*/
+    
+    .Hero_section .text_holder .name{
+        font-size: 40px !important;
+    }
+    .Hero_section .text_holder .name span{
+        font-size: 40px;
+    }
+    .Hero_section .text_holder .designation{
+        font-size: 20px !important;
+    }
+    .Hero_section .text_holder .designation span{
+        font-size: 20px;
+    }
+
+
+    /*Skill Section*/
+
+    .Skill_section .card .card-header {
+        height: 100px;
+    }
+    .Skill_section .card .card-header img{
+        width: 80px;
+        height: 80px;
+    }
+    .Skill_section .card .skill_level {
+        top: 50px;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        border: 3px solid #ffffff;
+        font-size: 12px;
+    }
+    .Skill_section .card .card-body ._title{
+        font-size: 20px !important;
+    }
+
+    .Skill_section .card .card-body ._description{
+        display: none;
+    }
+
+    .LetsTalk_section .description {
+        font-size: 14px !important;
+    }
+
+}
+
+/*Responsive screen (min-width:768px) and (max-width:991px)*/
+
+@media screen and (min-width:768px) and (max-width:991px){
+    
+    /*Hero Section*/
+
+    .Hero_section .text_holder .name{
+        font-size: 50px !important;
+    }
+    .Hero_section .text_holder .name span{
+        font-size: 50px;
+    }
+    .Hero_section .text_holder .designation{
+        font-size: 20px !important;
+    }
+    .Hero_section .text_holder .designation span{
+        font-size: 20px;
+    }
+
+
+    /*Skill Section*/
+
+    .Skill_section .card .card-header {
+        height: 135px;
+    }
+    .Skill_section .card .card-header img {
+        width: 100px;
+        height: 100px;
+    }
+    .Skill_section .card .skill_level {
+        right: 0;
+        height: 60px;
+        width: 60px;
+        border: 3px solid #ffffff;
+        font-size: 14px;
+    }
+    .Skill_section .card .card-body ._title{
+        font-size: 20px !important;
+    }
+    .Skill_section .card .card-body ._description{
+        display: none;
+    }
+
+
+    .LetsTalk_section .description {
+        font-size: 14px !important;
+    }
+}
+
+
+
+/*Responsive screen (min-width:991px) and (max-width:1200px)*/
+
+@media screen and (min-width:991px) and (max-width:1400px){
+    
+    /*Hero Section*/
+
+    .Hero_section .text_holder .name{
+        font-size: 60px !important;
+    }
+    .Hero_section .text_holder .name span{
+        font-size: 60px;
+    }
+    .Hero_section .text_holder .designation{
+        font-size: 30px !important;
+    }
+    .Hero_section .text_holder .designation span{
+        font-size: 30px;
+    }
+}
+
+
+
+
+/*Responsive screen Only Below 991px*/
+
+@media screen and (max-width:991px){
+
+    .section{
+        padding: 60px 0;
+    }
+    .section_heading{
+        font-size: 30px !important;
+        margin-bottom: 40px;
+    }
+
+
+    /*About Section*/
+
+    .About_section .text_column{
+        text-align: center;
+    }
+    .About_section .text_column h4{
+        margin: 20px 0 5px 0;
+    }
+    .About_section .text_column .about_list{
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .About_section .text_column .about_list > div{
+        width: 290px;
+    }
+    .About_section .text_column .about_list .list_item{
+        width: fit-content;
+    }
+
+    .About_section .text_column .about_list .list_item label {
+        min-width: 82px;
+        font-size: 14px;
+    }
+
+    .About_section .text_column .about_list .list_item p {
+        padding-left: 1.1rem;
+        font-size: 14px !important;
+    }
+
+    
+}
+
+/*Responsive screen Only Below 991px*/
+
+@media screen and (min-width:991px){
+
+    .section{
+        padding: 60px 0;
+    }
+    .section_heading{
+        font-size: 40px !important;
+        margin-bottom: 40px;
+    }
+
+}
+
+/*Responsive screen Only Below 767px*/
+
+@media screen and (max-width: 767px) {
+
+    /*Experience Section*/
+
+    .Experience_section .timeline_items::before{
+        left: 7px;
+    }
+    .Experience_section .timeline_items .timeline_item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .Experience_section .timeline_items .timeline_item:nth-child(even),
+    .timeline_item:nth-child(odd){
+        padding-left:22px ;
+    }
+    .Experience_section .timeline_items .timeline_item .timeline_dot{
+        left: -12px;
+    }
+}
