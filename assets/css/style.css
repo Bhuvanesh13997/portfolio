@@ -436,6 +436,7 @@ header nav .nav_logo{
 .Projects_section .content_row > div{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .Projects_section .projects_filters{
     display: flex;
@@ -450,6 +451,7 @@ header nav .nav_logo{
     border-radius: 4px;
     color: #ffffff;
     background-color: #000000;
+    margin-bottom: 10px !important;
     cursor: pointer;
 }
 .Projects_section .projects_filters .active_filter{
