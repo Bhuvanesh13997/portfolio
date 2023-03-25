@@ -465,7 +465,7 @@ header nav .nav_logo{
     width: 280px;
     padding: 20px;
     background-color: currentColor;
-    border-radius: 12px;
+    border-radius: 4px;
     margin: 15px;
     text-align: left;
 }
@@ -475,9 +475,9 @@ header nav .nav_logo{
     pointer-events: none;
 }
 .Projects_section .project_list .work_card img{
-    max-width: 100%;
-    border-radius: 12px;
-    height: 180px;
+    width: 100%;
+    border-radius: 4px;
+    height: 150px;
 }
 .Projects_section .project_list .work_card h5{
     margin-top: 10px;
