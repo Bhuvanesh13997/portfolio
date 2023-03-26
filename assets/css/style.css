@@ -500,6 +500,7 @@ header nav .nav_logo{
 
 
 .LetsTalk_section{
+    position: relative;
     text-align: center;
     color: #ffffff;
     /* background-color: #121212; */
@@ -574,6 +575,22 @@ header nav .nav_logo{
 }
 .LetsTalk_section .form_section .submitBtn:focus{
     box-shadow: unset;
+}
+
+
+/*Footer*/
+
+.Footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #121212;
+    color: var(--font-small-color);
+    padding: 5px;
+    font-size: 14px;
+    overflow-y: hidden;
 }
 
 
