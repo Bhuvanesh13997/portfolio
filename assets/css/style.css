@@ -140,9 +140,6 @@ header nav .nav_logo{
 .nav_link i{
     font-size: 20px;
 }
-.nav_link:hover{
-    /* color: crimson !important;  */
-}
 .active_link{
     border-bottom: 2px solid crimson;
     font-weight: 500;
@@ -223,10 +220,6 @@ header nav .nav_logo{
     box-shadow: 0 25px 50px -12px rgb(0,0,0/25%);
     background-color: #000000;
 }
-.About_section .img_column .about_img img{
-    
-}
-
 .About_section .text_column{
     display: flex;
     align-items: center;
@@ -503,7 +496,6 @@ header nav .nav_logo{
     position: relative;
     text-align: center;
     color: #ffffff;
-    /* background-color: #121212; */
     background-color: rgb(28, 28, 28);
     min-height: 100vh;
     display: flex;
@@ -518,10 +510,6 @@ header nav .nav_logo{
     font-size: 20px !important;
     margin-bottom: 40px;
 }
-.LetsTalk_section .content_row{
-    /* max-width: 800px;
-    margin: 0 auto; */
-}
 .LetsTalk_section .contact_details .contact_info{
     width: 450px;
     margin: 0 auto 10px auto;
@@ -535,9 +523,6 @@ header nav .nav_logo{
     padding: 15px;
     text-align:center ;
 }
-/* .LetsTalk_section .contact_details .contact_info > div h5{
-    color: crimson;
-} */
 .LetsTalk_section .form_section{
     text-align: left;
     max-width: 500px;
