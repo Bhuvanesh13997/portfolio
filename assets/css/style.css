@@ -284,9 +284,16 @@ header nav .nav_logo{
 }
 
 
+/*What I Do Section*/
 
-
-
+.WhatIDo_section{
+    background-color: #121212;
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+.WhatIDo_section .description{
+    font-size: 20px !important;
+}
 
 
 /***************************Experience***********************/
