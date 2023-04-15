@@ -441,6 +441,11 @@ header nav .nav_logo{
     border-color: #4fdfff;
 }
 .Skill_section .content_row > div:nth-child(6) .skill_level{
+    background-color: #4fa0ff28;
+    color: #4fa0ff;
+    border-color: #4fa0ff;
+}
+.Skill_section .content_row > div:nth-child(7) .skill_level{
     background-color: #f4dfff28;
     color: #ff4f4f;
     border-color: #ff4f4f;
