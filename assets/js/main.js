@@ -168,31 +168,6 @@ function SendMail(event){
       });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const block = document.querySelectorAll('.block');
 window.addEventListener('click', function(){
   block.forEach(item => {
@@ -219,3 +194,57 @@ window.addEventListener('click', function(){
     }
   })
 });
+
+
+
+
+
+// Enter your date of birth
+var birthDate = new Date('September 13, 1997');
+
+
+// Function to calculate the difference between two dates
+function getTimeSinceBirth(birthDate) {
+    var currentDate = new Date();
+    var timeDiff = Math.abs(currentDate.getTime() - birthDate.getTime());
+  
+    // Calculate years, months, days, hours, minutes, seconds, and milliseconds
+    var years = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 365.25));
+    var months = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 30.436875)) % 12;
+    var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24)) % 30.436875;
+    var hours = Math.floor(timeDiff / (1000 * 60 * 60)) % 24;
+    var minutes = Math.floor(timeDiff / (1000 * 60)) % 60;
+    var seconds = Math.floor(timeDiff / 1000) % 60;
+    var milliseconds = timeDiff % 1000;
+  
+    return {
+      years: years,
+      months: months,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds,
+      milliseconds: milliseconds
+    };
+  }
+  
+  // Function to update the live time in HTML
+  function updateLiveTime() {
+    // Get the time since birth
+    var timeSinceBirth = getTimeSinceBirth(birthDate);
+
+    // Update the HTML elements with the live time information
+    document.getElementById('years').textContent = timeSinceBirth.years;
+    document.getElementById('months').textContent = timeSinceBirth.months;
+    document.getElementById('days').textContent = timeSinceBirth.days;
+    document.getElementById('hours').textContent = timeSinceBirth.hours;
+    document.getElementById('minutes').textContent = timeSinceBirth.minutes;
+    document.getElementById('seconds').textContent = timeSinceBirth.seconds;
+    document.getElementById('milliseconds').textContent = timeSinceBirth.milliseconds;
+
+    // Request the next animation frame to update the milliseconds
+    requestAnimationFrame(updateLiveTime);
+  }
+
+  // Call the updateLiveTime function to start updating the live time
+  updateLiveTime();

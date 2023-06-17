@@ -359,8 +359,11 @@ header nav .nav_logo{
 }
 .Experience_section .timeline_items .timeline_item .timeline_content{
     background-color: #2f363e;
-    padding: 30px;
+    padding: 25px 25px 20px 25px;
     border-radius: 8px;
+}
+.Experience_section .timeline_items .timeline_item .timeline_content img{
+    margin-top: 10px;
 }
 
 
@@ -417,8 +420,8 @@ header nav .nav_logo{
 
 .Skill_section .content_row > div:nth-child(1) .skill_level{
     background-color: #ff4f4f28;
-    color: #ff4f4f;
-    border-color: #ff4f4f;
+    color: #dd4b25;
+    border-color: #dd4b25;
 }
 .Skill_section .content_row > div:nth-child(2) .skill_level{
     background-color: #4fa0ff28;
@@ -431,25 +434,20 @@ header nav .nav_logo{
     border-color: #ffed4f;
 }
 .Skill_section .content_row > div:nth-child(4) .skill_level{
-    background-color: #52ff4f28;
-    color: #52ff4f;
-    border-color: #52ff4f;
+    background-color: #9c27b014;
+    color: #8210f5;
+    border-color: #8210f5;
 }
 .Skill_section .content_row > div:nth-child(5) .skill_level{
-    background-color: #f4dfff28;
+    background-color: rgb(79 223 255 / 10%);
     color: #4fdfff;
     border-color: #4fdfff;
 }
 .Skill_section .content_row > div:nth-child(6) .skill_level{
-    background-color: #4fa0ff28;
-    color: #4fa0ff;
-    border-color: #4fa0ff;
-}
-/* .Skill_section .content_row > div:nth-child(7) .skill_level{
     background-color: #f4dfff28;
-    color: #ff4f4f;
-    border-color: #ff4f4f;
-} */
+    color: #bf4080;
+    border-color: #bf4080;
+}
 
 
 
