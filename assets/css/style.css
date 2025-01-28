@@ -81,8 +81,8 @@ a{
     background-color: transparent;
     font-size: 17px;
     outline: none;
-    border-radius: 6px;
-    border: 1px solid #ffffff;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
     padding: 8px 15px;
     cursor: pointer;
     transition: all 0.1s ease-in;
@@ -384,16 +384,42 @@ header nav .nav_logo{
 .Skill_section .card{
     background-color: transparent;
     border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+}
+.Skill_section .content_row > div:nth-child(1) .card img{
+    filter: invert(24%) sepia(88%) saturate(2562%) hue-rotate(9deg);
+}
+.Skill_section .content_row > div:nth-child(2) .card img{
+    filter: invert(48%) sepia(83%) saturate(2813%) hue-rotate(183deg);
+}
+.Skill_section .content_row > div:nth-child(3) .card img{
+    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(0deg);
+}
+.Skill_section .content_row > div:nth-child(4) .card img{
+    filter: invert(41%) sepia(69%) saturate(2201%) hue-rotate(241deg);
+}
+.Skill_section .content_row > div:nth-child(5) .card img{
+    filter: invert(38%) sepia(72%) saturate(2052%) hue-rotate(187deg);
+}
+.Skill_section .content_row > div:nth-child(6) .card img{
+    filter: invert(53%) sepia(58%) saturate(336%) hue-rotate(267deg);
+}
+.Skill_section .content_row > div:nth-child(7) .card img{
+    filter: invert(40%) sepia(100%) saturate(400%) hue-rotate(220deg);
+}
+.Skill_section .content_row > div:nth-child(8) .card img{
+    filter: invert(47%) sepia(61%) saturate(349%) hue-rotate(94deg);
 }
 .Skill_section .card .card-header{
     position: relative;
     height: 150px;
     border-bottom: 0;
+    background-color: unset;
 }
 .Skill_section .card .card-header img{
     width: 120px;
     height: 120px;
-    filter: invert(0.2);
+    /* filter: invert(0.2); */
 }
 .Skill_section .card .skill_level{
     position: absolute;
@@ -417,38 +443,6 @@ header nav .nav_logo{
     font-size: 14px !important;
     color: #A3A3A3;
 }
-
-.Skill_section .content_row > div:nth-child(1) .skill_level{
-    background-color: #ff4f4f28;
-    color: #dd4b25;
-    border-color: #dd4b25;
-}
-.Skill_section .content_row > div:nth-child(2) .skill_level{
-    background-color: #4fa0ff28;
-    color: #4fa0ff;
-    border-color: #4fa0ff;
-}
-.Skill_section .content_row > div:nth-child(3) .skill_level{
-    background-color: #ffed4f28;
-    color: #ffed4f;
-    border-color: #ffed4f;
-}
-.Skill_section .content_row > div:nth-child(4) .skill_level{
-    background-color: #9c27b014;
-    color: #8210f5;
-    border-color: #8210f5;
-}
-.Skill_section .content_row > div:nth-child(5) .skill_level{
-    background-color: rgb(79 223 255 / 10%);
-    color: #4fdfff;
-    border-color: #4fdfff;
-}
-.Skill_section .content_row > div:nth-child(6) .skill_level{
-    background-color: #f4dfff28;
-    color: #bf4080;
-    border-color: #bf4080;
-}
-
 
 
 /******************* Projects ***********************/
