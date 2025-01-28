@@ -763,7 +763,7 @@ header nav .nav_logo{
         margin: 0 auto;
     }
     .Skill_section .card .card-header img{
-        width: 100px;
+        width: 50px;
         height: 100px;
     }
 
@@ -777,7 +777,7 @@ header nav .nav_logo{
     }
 
     .Skill_section .card .card-body ._title {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .Skill_section .card .card-body ._description {
         display: none;
@@ -846,7 +846,7 @@ header nav .nav_logo{
         height: 100px;
     }
     .Skill_section .card .card-header img{
-        width: 80px;
+        width: 50px;
         height: 80px;
     }
     .Skill_section .card .skill_level {
@@ -858,7 +858,7 @@ header nav .nav_logo{
         font-size: 12px;
     }
     .Skill_section .card .card-body ._title{
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 
     .Skill_section .card .card-body ._description{
@@ -897,7 +897,7 @@ header nav .nav_logo{
         height: 135px;
     }
     .Skill_section .card .card-header img {
-        width: 100px;
+        width: 75px;
         height: 100px;
     }
     .Skill_section .card .skill_level {
@@ -908,7 +908,7 @@ header nav .nav_logo{
         font-size: 14px;
     }
     .Skill_section .card .card-body ._title{
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
     .Skill_section .card .card-body ._description{
         display: none;
